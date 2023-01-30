@@ -80,7 +80,7 @@ const SignUp = () => {
       <div>
         <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-50">
           <div>
-            <h3 className="text-4xl font-bold text-primary">Power_Hack</h3>
+            <h3 className="text-4xl font-bold text-gray-900">Power_Hack</h3>
           </div>
           <div className="w-full px-6 py-4 mt-6 overflow-hidden bg-white shadow-md sm:max-w-lg sm:rounded-lg">
             <form onSubmit={handleSubmit(signUpFormSubmit)}>
@@ -203,7 +203,7 @@ const SignUp = () => {
                 )}
               </div>
               <div className="flex items-center mt-4">
-                <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-primary rounded-md bg-blue-700 hover:bg-blue-800 focus:outline-none focus:bg-blue-600">
+                <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform gray-900 rounded-md  hover:bg-gray-800 focus:outline-none focus:bg-gray-600">
                   Register
                 </button>
               </div>
@@ -235,7 +235,10 @@ const SignUp = () => {
             <div className="mt-4 text-grey-600">
               Already have an account?{" "}
               <span>
-                <Link className="text-primary hover:underline" to="/signin">
+                <Link
+                  className="text-gray-900 hover:underline font-bold"
+                  to="/signin"
+                >
                   Go to signIn
                 </Link>
               </span>

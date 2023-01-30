@@ -56,7 +56,7 @@ const SignIn = () => {
       <div>
         <div className="flex flex-col items-center min-h-screen pt-6 sm:justify-center sm:pt-0 bg-gray-50">
           <div>
-            <h3 className="text-4xl font-bold text-primary">Power_Hack</h3>
+            <h3 className="text-4xl font-bold text-gray-900">Power_Hack</h3>
           </div>
           <div className="w-full px-6 py-4 mt-6 overflow-hidden bg-white shadow-md sm:max-w-lg sm:rounded-lg">
             <form onSubmit={handleSubmit(signInFormSubmit)}>
@@ -121,7 +121,7 @@ const SignIn = () => {
               </div>
 
               <div className="flex items-center mt-4">
-                <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-primary rounded-md hover:bg-blue-800 bg-blue-700 focus:outline-none focus:bg-blue-600">
+                <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform  rounded-md hover:bg-gray-800 bg-gray-900 focus:outline-none focus:bg-gray-600">
                   Sign In
                 </button>
               </div>
@@ -153,7 +153,10 @@ const SignIn = () => {
             <div className="mt-4 text-grey-600">
               New to Power_Hack?{" "}
               <span>
-                <Link className="text-primary hover:underline" to="/signup">
+                <Link
+                  className="text-gray-900 hover:underline font-bold"
+                  to="/signup"
+                >
                   Go to signUp
                 </Link>
               </span>

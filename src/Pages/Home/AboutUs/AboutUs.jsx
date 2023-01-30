@@ -24,7 +24,7 @@ const AboutUs = () => {
             our site. Click the below button to pay the electricity bill
           </p>
 
-          <Link to="billings" className="btn btn-primary my-8">
+          <Link to="billings" className="btn bg-gray-900 my-8">
             Get Started
           </Link>
         </div>
